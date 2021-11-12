@@ -1,0 +1,20 @@
+@media only screen and (min-width: 375px){
+  .hd-header{
+    padding-top: 110px;
+  };
+}
+@media only screen and (min-width: 375px){
+  .im-arrw{
+    padding-top: 55px;
+  }
+}
+@media only screen and (min-width: 640px){
+  .hd-header{
+    padding-top: 205px;
+  };
+}
+@media only screen and (min-width: 1024px){
+  .hd-header{
+    padding-top: 160px;
+  };
+}
