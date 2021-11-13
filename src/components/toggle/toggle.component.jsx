@@ -15,14 +15,14 @@ const Toggle = () => {
     return(
       <div>
         <div>
-          <img onClick={handleClick} src={toggleIcon} alt="toggle icon"/>
+          <img className="toggleIcn py-6 pr-5 float-right" onClick={handleClick} src={toggleIcon} alt="toggle icon"/>
         </div>
 
-        <div className="bg-white toggleDiv shadow-2xl rounded-sm text-center text-xl sm:text-2xl text-gray-600">
-          <p className="py-3  pt-16 hover:text-gray-900"><a href="#">About</a></p>
-          <p className="py-3 sm:py-4 hover:text-gray-900"><a href="#">Services</a></p>
-          <p className="py-3 sm:py-4 hover:text-gray-900"><a href="#">Projects</a></p>
-          <p className="py-3 sm:py-4"><button className="text-sm text-gray-900 hover:text-gray-700 bg-yellow-300 hover:bg-yellow-200 font-bold py-3 rounded-full px-7">CONTACT</button></p>
+        <div className="bg-white shadow-2xl toggleDiv rounded-sm text-center text-xl text-gray-600">
+          <p className="hover:text-gray-900 pb-4"><a href="https://google.com">About</a></p>
+          <p className="hover:text-gray-900 pb-4"><a href="https://google.com">Services</a></p>
+          <p className="hover:text-gray-900 pb-4"><a href="https://google.com">Projects</a></p>
+          <button className="text-sm text-gray-900 hover:text-gray-700 bg-yellow-300 hover:bg-yellow-200 font-bold rounded-full py-3 px-4">CONTACT</button>
         </div>
       </div>
     )
@@ -30,7 +30,7 @@ const Toggle = () => {
 
   return(
     <div>
-      <img onClick={handleClick} src={toggleIcon} alt="toggle icon"/>
+      <img className="float-right py-6 pr-5" onClick={handleClick} src={toggleIcon} alt="toggle icon"/>
     </div>
   )
 }

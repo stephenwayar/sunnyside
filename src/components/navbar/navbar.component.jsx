@@ -6,16 +6,16 @@ import "./navbar.component.css"
 
 const Navbar = () => {
   return(
-    <div className="grid grid-cols-2">  
+    <div className="">  
 
-      <img className="px-5 py-6" src={logo} alt="toggle 
+      <img className="px-5 py-6 float-left" src={logo} alt="toggle 
       button"/>
 
-      <div className="pt-7 pl-36 sm:pl-64 mn-iphone sm:ml-5 md:hidden">
+      <div className="md:hidden">
         <Toggle />
       </div>
 
-      <div className="hidden md:block py-5 mr-5 text-right">
+      <div className="hidden md:block py-6 pr-5 text-right">
         <NavItems />
       </div>
     </div>
