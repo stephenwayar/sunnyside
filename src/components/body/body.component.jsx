@@ -3,12 +3,22 @@ import egg from "../../assests/images/mobile/image-transform.jpg"
 import cup from "../../assests/images/mobile/image-stand-out.jpg"
 import ServiceCard from "../serviceCard/serviceCard.component";
 import { brand } from "../../data/brand";
+import { design } from "../../data/design";
 import dskEgg from "../../assests/images/desktop/dsk-image-transform.jpg"
+import DesignCard from "../designCard/designCard.component";
+import classNames from "classnames";
 
 const Body = () => {
+
+  const bgCherry = classNames(
+    "bg-cherry",
+  )
+  const bgOrange = classNames(
+    "bg-orange"
+  )
+
   return(
     <div>
-
       {/* Display for smaller screens */}
 
       <div className="lg:hidden">
@@ -29,7 +39,6 @@ const Body = () => {
           extend={brand[1].extend}
         />
       </div>
-
       {/* Display for larger screen */}
 
       <div className="hidden lg:block">
@@ -52,6 +61,19 @@ const Body = () => {
             extend={brand[1].extend}
           />
         </div>
+      </div>
+      <DesignCard 
+        bg={bgCherry}
+        title={design[0].title}
+        content={design[0].content}
+      />
+      <DesignCard 
+        bg={bgOrange}
+        title={design[1].title}
+        content={design[1].content}        
+      />
+      <div>
+        <h1 className="text-center pt-16 text-lg font-bold font-mono text-gray-500">CLIENTS TESTIMONIALS</h1>
       </div>
     </div>
   )
