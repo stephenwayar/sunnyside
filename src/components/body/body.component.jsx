@@ -16,6 +16,7 @@ import milk from "../../assests/images/mobile/image-gallery-milkbottles.jpg"
 import orangeGallery from "../../assests/images/mobile/image-gallery-orange.jpg"
 import cone from "../../assests/images/mobile/image-gallery-cone.jpg"
 import sugar from "../../assests/images/mobile/image-gallery-sugar-cubes.jpg"
+import Footer from "../footer/footer.component";
 
 const Body = () => {
 
@@ -129,6 +130,8 @@ const Body = () => {
         <img className="w-full" src={cone} alt="icecream cone"/>
         <img className="w-full" src={sugar} alt="sugar cubes"/>
       </div>
+
+      <Footer />
     </div>
   )
 }
