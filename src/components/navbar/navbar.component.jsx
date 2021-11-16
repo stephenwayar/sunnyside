@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Toggle from "../toggle/toggle.component";
 import logo from "../../assests/images/logo.svg"
 import NavItems from "../navItems/navitems.component";
@@ -8,8 +9,8 @@ const Navbar = () => {
   return(
     <div className="">  
 
-      <img className="px-5 py-6 float-left" src={logo} alt="toggle 
-      button"/>
+      <Link to="/"><img className="px-5 py-6 float-left" src={logo} alt="toggle 
+      button"/></Link>
 
       <div className="md:hidden">
         <Toggle />

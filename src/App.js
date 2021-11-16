@@ -1,24 +1,26 @@
 import React from "react"
-import Navbar from "./components/navbar/navbar.component"
-import arrow from "./assests/images/icon-arrow-down.svg"
+import { Routes, Route } from 'react-router-dom';
 import "./App.css"
-import Body from "./components/body/body.component"
+import HomePage from "./pages/home/homePage";
+import AboutPage from "./pages/about/aboutPage";
+import ContactPage from "./pages/contact/contactPage";
+import ServicePage from "./pages/services/servicesPage";
+import ProjectsPage from "./pages/projects/projectsPage";
+// import Error from "./pages/404/404Error";
 
 const App = () => {
   return(
-    <div>
-      <div className="bg-header h-screen md:bg-desktop-header md:bg-center bg-center bg-cover bg-no-repeat">
-        <Navbar />
-        <div className="text-center sm:text-5xl text-white font-bold text-3xl font-serif hd-header">
-          WE ARE CREATIVES
-        </div>
-        <div className="m-auto w-7 im-arrw sm:hidden pt-12">
-          <img src={arrow} alt="arrow down"/>
-        </div>
-      </div>
+    <main>
+      <Routes>
 
-      <Body />
-    </div>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/services" element={<ServicePage/>} />
+        <Route path="/projects" element={<ProjectsPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
+
+      </Routes>
+    </main>
   )
 }
 export default App
